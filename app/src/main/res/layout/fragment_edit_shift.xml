@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start|top|center_vertical"
+    android:orientation="vertical"
+    android:outlineProvider="none"
+    android:id="@+id/fragmentContainer"
+    tools:context=".ui.editShift.editShiftFragment">
+
+
+    <TextView
+        android:id="@+id/bothTrainWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_both_train"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/asgnMornEmp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekLabel"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/closeTrainWarnWeekend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_close_train"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/asgnMornEmp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toEndOf="@+id/open"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <TextView
+        android:id="@+id/closeTrainWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_close_train"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/asgnEveEmp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/close"
+        app:layout_constraintTop_toBottomOf="@+id/asgnMornEmp3"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/weekLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/backDayWBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/madang"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:id="@+id/curMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/forwardDayWBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/madang"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/weekLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="start|top|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUN"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/mon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MON"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/tue"
+            app:layout_constraintStart_toEndOf="@+id/sun"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/wed"
+            app:layout_constraintStart_toEndOf="@+id/mon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WED"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/thu"
+            app:layout_constraintStart_toEndOf="@+id/tue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THU"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/fri"
+            app:layout_constraintStart_toEndOf="@+id/wed"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FRI"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/thu"
+            app:layout_constraintStart_toEndOf="@+id/sat"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAT"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fri"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/open"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_menu_sun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <ImageView
+        android:id="@+id/close2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_menu_moon"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toEndOf="@+id/open"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <CheckBox
+        android:id="@+id/busyDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Busy Day"
+        app:layout_constraintBottom_toTopOf="@+id/asgnMornEmp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/open"
+        app:layout_constraintTop_toBottomOf="@+id/weekLabel"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <Button
+        android:id="@+id/saveShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/aquamarine"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/asgnMornEmp3"
+        android:layout_width="291dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_custom_spinner"
+        android:clickable="true"
+        android:dropDownSelector="@drawable/ic_custom_rectangle"
+        android:popupBackground="@drawable/ic_custom_rectangle"
+        android:prompt="@string/assign_emp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asgnMornEmp2"
+        tools:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/asgnMornEmp1"
+        android:layout_width="291dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_custom_spinner"
+        android:dropDownSelector="@drawable/ic_custom_rectangle"
+        android:popupBackground="@drawable/ic_custom_rectangle"
+        android:prompt="@string/assign_emp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open" />
+
+    <Spinner
+        android:id="@+id/asgnEveEmp3"
+        android:layout_width="291dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_custom_spinner"
+        android:dropDownSelector="@drawable/ic_custom_rectangle"
+        android:popupBackground="@drawable/ic_custom_rectangle"
+        android:prompt="@string/assign_emp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asgnEveEmp2"
+        tools:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/asgnEveEmp1"
+        android:layout_width="291dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_custom_spinner"
+        android:dropDownSelector="@drawable/ic_custom_rectangle"
+        android:popupBackground="@drawable/ic_custom_rectangle"
+        android:prompt="@string/assign_emp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_menu_moon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asgnMornEmp3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/asgnEveEmp2"
+        android:layout_width="291dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_custom_spinner"
+        android:dropDownSelector="@drawable/ic_custom_rectangle"
+        android:popupBackground="@drawable/ic_custom_rectangle"
+        android:prompt="@string/assign_emp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asgnEveEmp1" />
+
+    <Spinner
+        android:id="@+id/asgnMornEmp2"
+        android:layout_width="291dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_custom_spinner"
+        android:dropDownSelector="@drawable/ic_custom_rectangle"
+        android:popupBackground="@drawable/ic_custom_rectangle"
+        android:prompt="@string/assign_emp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asgnMornEmp1" />
+
+    <TextView
+        android:id="@+id/openTrainWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_open_train"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/asgnMornEmp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekLabel"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/dupWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/no_dup_emp"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/saveShift"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

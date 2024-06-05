@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="jade">#FF01A66F</color>
+    <color name="aquamarine">#FF75CE9F</color>
+    <color name="madang">#FFBDD99E</color> <!-- allDay avail color-->
+    <color name="chardonnay">#FFFFC06E</color> <!-- Morn avail color-->
+    <color name="aero">#FFACCCEC</color> <!-- eve avail color-->
+    <color name="redish">#FFFFA2A2</color> <!-- eve avail color-->
+
+    <color name="clear">#00000000</color>
+
+</resources>

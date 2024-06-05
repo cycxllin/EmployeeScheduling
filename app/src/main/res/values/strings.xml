@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">F22Lovelace</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Restaurant Lovelace</string>
+    <string name="nav_header_subtitle">lovelace@placeholder.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Schedule</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_employees">Employees</string>
+    <string name="menu_schedule">Monthly Schedule</string>
+    <string name="menu_edit_employee">Apply Changes</string>
+    <string name="menu_view_employee">View Employee Info</string>
+    <string name="menu_edit_employee_availability">Edit Availability</string>
+    <string name="menu_remove_employee">Remove Employee</string>
+
+
+    <string name="fill_first_name">First Name*</string>
+    <string name="fill_last_name">Last Name*</string>
+    <string name="fill_middle_name">Middle Name</string>
+    <string name="fill_email">Email*</string>
+    <string name="fill_phone_num">Phone Number*</string>
+    <string name="train_close">Close</string>
+    <string name="train_open">Open</string>
+    <string name="required_field">Required Field</string>
+    <string name="phone_format">XXX-XXX-XXXX</string>
+    <string name="train">Training</string>
+    <string name="button_actions">Actions</string>
+    <string name="button_add_employee">Add Employee</string>
+    <string name="emp_avail_page">This is Employee availability</string>
+    <string name="title_activity_employee">EmployeeActivity</string>
+    <string name="save_availability">Save Availability?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No/Cancel</string>
+    <string name="assign_emp">Assign Employee</string>
+    <string name="save_shift">Save Shift Assignment?</string>
+    <string name="save_emp">Save Current Changes?</string>
+    <string name="no_schedule">No Employees Scheduled!</string>
+    <string name="need_open_train">Need employee trained \nfor open!</string>
+    <string name="need_close_train">Need employee trained \nfor close!</string>
+    <string name="need_both_train">Need employee trained \nfor open and close!</string>
+    <string name="no_dup_emp">Cannot schedule employee twice!</string>
+    <string name="sched_popup">A schedule for this month exists. What would you like to do?</string>
+    <string name="overwrite">Overwrite current schedule.</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_sched">Create new schedule</string>
+    <string name="invalid_email">username@domain.com</string>
+    <string name="week_check_title">Available Employees\nnot scheduled for week of:</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

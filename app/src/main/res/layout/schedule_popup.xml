@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schedpopup"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:background="@drawable/ic_green_rectangle"
+    android:orientation="vertical"
+    android:overlapAnchor="true">
+
+
+    <TextView
+        android:id="@+id/export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sched_popup"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/newbtn"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/ic_green_rectangle"
+        android:insetTop="6dp"
+        android:insetBottom="6dp"
+        android:text="New One"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/overwritebtn"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/ic_green_rectangle"
+        android:insetTop="6dp"
+        android:insetBottom="6dp"
+        android:text="@string/overwrite"
+        app:iconPadding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="102dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/ic_green_rectangle"
+        android:text="@string/cancel"
+        app:iconPadding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

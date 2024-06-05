@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item android:drawable="@drawable/ic_custom_rectangle"/>
+        <item android:gravity="right" android:drawable="@drawable/ic_spinner_arrow"/>
+    </layer-list></item>
+</selector>

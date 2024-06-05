@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.f22lovelace.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_employees"
+            app:destination="@id/nav_employees" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_schedule"
+            app:destination="@id/nav_schedule" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_editshift"
+            app:destination="@id/nav_editshift" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_employees"
+        android:name="com.example.f22lovelace.ui.employees.EmployeesFragment"
+        android:label="Employees"
+        tools:layout="@layout/fragment_employees" >
+        <action
+            android:id="@+id/action_nav_employees_to_nav_editemployees"
+            app:destination="@id/nav_vieweditemployee" />
+        <action
+            android:id="@+id/action_nav_employees_to_nav_addemployees"
+            app:destination="@id/nav_addemployees" />
+        <action
+            android:id="@+id/action_nav_employees_to_nav_schedule"
+            app:destination="@id/nav_schedule" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_schedule"
+        android:name="com.example.f22lovelace.ui.schedule.ScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_nav_schedule_to_nav_employees"
+            app:destination="@id/nav_employees" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_addemployees"
+        android:name="com.example.f22lovelace.ui.addemployees.AddEmployeesFragment"
+        android:label="Add Employee"
+        tools:layout="@layout/fragment_addemployees" >
+        <action
+            android:id="@+id/action_nav_addemployees_to_nav_employees"
+            app:destination="@id/nav_employees"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_employees"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_addemployees_to_nav_schedule"
+            app:destination="@id/nav_schedule" />
+        <action
+            android:id="@+id/action_nav_addemployees_to_nav_schedule2"
+            app:destination="@id/nav_schedule" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vieweditemployee"
+        android:name="com.example.f22lovelace.ui.Edit.ViewEditEmployeeFragment"
+        android:label="@string/menu_edit_employee"
+        tools:layout="@layout/fragment_vieweditemployee" />
+
+    <fragment
+        android:id="@+id/nav_editshift"
+        android:name="com.example.f22lovelace.ui.editShift.editShiftFragment"
+        android:label="Edit Shift"
+        tools:layout="@layout/fragment_edit_shift" >
+        <action
+            android:id="@+id/action_nav_editshift_to_nav_employees"
+            app:destination="@id/nav_employees" />
+        <action
+            android:id="@+id/action_nav_editshift_to_nav_schedule"
+            app:destination="@id/nav_schedule" />
+    </fragment>
+
+</navigation>

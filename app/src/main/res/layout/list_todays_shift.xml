@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="25dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/ic_custom_rectangle"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/empID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <TextView
+        android:id="@+id/eFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/empID"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eMName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/eFName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@+id/eMName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/eLName"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="2dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ImageView
+        android:id="@+id/sOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ePhone"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_menu_sun"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/eFName" />
+
+    <ImageView
+        android:id="@+id/sClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eMName"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@+id/sOpen"
+        android:src="@drawable/ic_menu_moon"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/eMName" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="25dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/ic_custom_rectangle"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/sEID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="0dp"
+        android:textSize="12dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <TextView
+        android:id="@+id/sEFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/sEID"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sEMName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/sEFName"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sELName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@+id/sEMName"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sEPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sELName"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="2dp"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/sEOpen"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/sEPhone"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_menu_sun"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/sEFName" />
+
+    <ImageView
+        android:id="@+id/sEClose"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/sEMName"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@+id/sEOpen"
+        android:src="@drawable/ic_menu_moon"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/sEMName" />
+
+</RelativeLayout>

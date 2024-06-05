@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Apply"
+        android:title="@string/menu_edit_employee" />
+
+    <item
+        android:id="@+id/Avail"
+        android:title="@string/menu_edit_employee_availability" />
+
+    <item
+        android:id="@+id/Remove"
+        android:title="@string/menu_remove_employee" />
+
+</menu>
